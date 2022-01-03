@@ -1,0 +1,35 @@
+
+
+.clients {
+    background: #F8FDFE;
+    margin-bottom: 120px;
+
+    &__container {
+        margin: 0 127px 0 370px;
+        background: url(../img/clients.png);
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-size: 50%;
+    }
+
+    &__content {
+        padding: 100px;
+    }
+
+    &__title {
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 61px;
+        color: $dark;
+    }
+
+    &__text {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 30px;
+        color: $secondary;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+}

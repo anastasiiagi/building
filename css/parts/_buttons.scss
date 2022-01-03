@@ -1,0 +1,58 @@
+button, .button {
+    display: flex;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: $accent;
+    color: white;
+    border: 0;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+a.button {
+    text-decoration: none;
+}
+
+.button {
+    &--header-top {
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        padding: 11px 25px;
+        margin-left: 120px;
+        @media (max-width: 740px) {
+            margin-left: 0;
+            margin-top: 15px;
+        }
+    }
+    &--header-hero {
+        padding: 23px 95px;
+        border-radius: 0px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    &--about {
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        padding: 16px 32px;
+    }
+    &--clients {
+        padding: 16px 32px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+    &--subcribe {
+        padding: 10px 23px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        position: absolute;
+        top: 8px;
+        left: 820px;
+    }
+}

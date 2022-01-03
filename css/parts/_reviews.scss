@@ -1,0 +1,70 @@
+.reviews {
+    padding: 96px;
+    background: #FFF8F7;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &__title {
+        font-family: Noto Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 65px;
+        color: $dark;
+        margin: 0;
+    }
+
+    &__text {
+        font-family: Rubik;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        color: $secondary;
+        margin: 16px 0 139px 0;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__card {
+        position: relative;
+        background: #FFFFFF;
+        padding: 81px 38px 31px 38px;
+
+        &-img {
+            position: absolute;
+            left: 113px;
+            bottom: 215px;
+        }
+
+        &-title {
+            margin: 0;
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: $dark;
+        }
+
+        &-stars {
+            margin: 8px 0 16px 0;
+        }
+
+        &-text {
+            font-family: Rubik;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: $secondary;
+        }
+    }
+}

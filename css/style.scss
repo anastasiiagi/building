@@ -1,0 +1,34 @@
+@import url("normalize.min.css");
+
+//! переменные
+@import "parts/vars";
+
+//! кнопки
+@import "parts/buttons";
+
+//! основные стили
+@import "parts/basic";
+
+//!шапка
+@import "parts/header";
+
+//!секция про нас
+@import "parts/about";
+
+//!секция каталога
+@import "parts/catalog";
+
+//!популярные места
+@import "parts/popular-places";
+
+//!кто нас выберает
+@import "parts/clients";
+
+//!отзывы
+@import "parts/reviews";
+
+//!форма для отправки
+@import "parts/form";
+
+//!
+@import "parts/footer"

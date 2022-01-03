@@ -1,0 +1,80 @@
+.popular-places{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 0;
+    &__top {
+        margin-bottom: 40px;
+
+        &-title {
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 61px;
+            color: $dark;
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+        &-text {
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 27px;
+            color: #555555;
+            margin: 0;
+        }
+    }
+    &__hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__card-big {
+        position: relative;
+        margin-right: 15px;
+
+        &-info {
+            position: absolute;
+            background: rgba(0, 96, 119, 0.02);
+            backdrop-filter: blur(29px);
+            padding: 13px 32px;
+            left: 85px;
+            top: 340px;
+        }
+    }
+    &__card-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    &__card-text {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 27px;
+        margin: 0;
+        color: #DDDDDD;
+    }
+    &__card-small {
+        width: 50%;
+        position: relative;
+
+        &:first-child {
+            margin-bottom: 20px;
+        }
+
+        &-info {
+            position: absolute;
+            background: rgba(0, 96, 119, 0.02);
+            backdrop-filter: blur(29px);
+            padding: 13px 37px;
+            left: 110px;
+            top: 143px;
+        }
+       
+    }
+}

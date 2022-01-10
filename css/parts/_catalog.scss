@@ -1,6 +1,8 @@
 .catalog {
-    padding: 75px 0;
     background: #F8FDFE;
+    padding: 75px 0;
+    
+    
 
     &-title {
         margin-top: 0;
@@ -9,17 +11,30 @@
         font-size: 48px;
         line-height: 61px;
         color: $dark;
+        @media (max-width: 1000px) {
+            text-align: center;
+        }
     }
 
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 1000px) {
+            flex-direction: column;
+        }
+        
     }
 
     &__right {
         display: flex;
         flex-direction: column;
+        @media (max-width: 1120px) {
+            margin-left: 15px;
+        }
+        @media (max-width: 1000px) {
+            margin-left: 0;
+        }
     }
 
     &__card {
@@ -31,9 +46,34 @@
         box-sizing: border-box;
         padding: 24px 73px 24px 24px;
         margin-bottom: 16px;
+        @media (max-width: 1120px) {
+            padding-right: 24px;
+        }
+        @media (max-width: 524px) {
+            align-items: center;
+        }
+
+        &:first-child {
+            margin-top: 15px;
+        }
 
         &:last-child {
             margin-bottom: 0;
+        }
+
+        &-br{
+            @media (max-width: 1133px) {
+                display: none;
+                width: 100%;
+            }
+
+            @media (max-width: 1000px) {
+                display: inline;
+            }
+
+            @media (max-width: 524px) {
+                display: none;
+            }
         }
 
         &-img {

@@ -26,14 +26,20 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width:1139px) {
+            flex-direction: column;
+        }
     }
-    &__cards {
-        display: flex;
-        flex-wrap: wrap;
-    }
+
     &__card-big {
         position: relative;
         margin-right: 15px;
+        @media (max-width:1139px) {
+            margin-right: 0;
+        }
+        @media (max-width:500px) {
+            position: inherit;
+        }
 
         &-info {
             position: absolute;
@@ -42,8 +48,20 @@
             padding: 13px 32px;
             left: 85px;
             top: 340px;
+            @media (max-width:500px) {
+                position: inherit;
+                background: $secondary;
+            }
         }
     }
+
+    &__img-big {
+        max-width: none;
+        @media (max-width:700px) {
+            max-width: 100%;
+        }
+    }
+
     &__card-title {
         font-weight: 500;
         font-size: 24px;
@@ -59,13 +77,47 @@
         margin: 0;
         color: #DDDDDD;
     }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        @media (max-width:1139px) {
+            margin-top: 20px;
+        }
+
+        @media (max-width:700px) {
+            flex-direction: column;
+        }
+    }
+
     &__card-small {
-        width: 50%;
+        width: 48%;
         position: relative;
+        @media (max-width:700px) {
+            position: inherit;
+            width: 100%;
+        }
 
         &:first-child {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            margin-right: 29px;
+            @media (max-width:1139px) {
+                margin-right: 0;
+            }
         }
+        &:nth-child(2) {
+            margin-bottom: 40px;
+        }
+        &:nth-child(3) {
+            margin-right: 29px;
+            @media (max-width:1139px) {
+                margin-right: 0;
+            }
+            @media (max-width:700px) {
+                margin-bottom: 40px;
+            }
+        }       
 
         &-info {
             position: absolute;
@@ -74,6 +126,16 @@
             padding: 13px 37px;
             left: 110px;
             top: 143px;
+            @media (max-width:1139px) {
+                left: 34%;
+                top: 48%;
+            }
+
+            @media (max-width:700px) {
+                position: inherit;
+                background: $secondary;
+                opacity: 0.8;
+            }
         }
        
     }

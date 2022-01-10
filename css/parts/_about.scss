@@ -4,57 +4,42 @@
     padding: 120px 0;
 
     &__container {
-        
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-         position: relative;
+        position: relative;
          
         @media (max-width: 1181px) {
             flex-direction: column;
-            align-items: center;
-           
+            align-items: center;  
         }
     }
 
     &__left{
         position: relative;
-
-        .proba{
-            position: absolute;
-            width: 558px;
-            height: 606px;
-        }
-        // &:after {
-        //     content: "";
-        //     background-image: url(/img/abaut-small.png);
-        //     width: 240px;
-        //     height: 160px;
-        //     bottom: -8px;
-        //     left: 290px;
-        //     position: absolute;
-
-        //     @media (max-width: 1181px){
-        //          bottom: -8px;
-        //          left: 290px;
-        //     }
-        // }
-
     }
 
-   
+    &__img-small {
+        position: absolute;
+        top: 446px;
+        left: 318px;
+        @media (max-width: 1181px){
+            left: 350px;
+        }
+        @media (max-width: 700px) {
+            display: none;
+        }
+    }
 
-    // &__img-small {
-    //     position: absolute;
-    //     top: 456px;
-    //     left: 26%;
-    //       @media (max-width: 1181px){
-    //           left: 53%;
-    //       }
-    // }
+    &__button{
+        @media (max-width: 1180px) {
+        text-align: center;            
+        }
+    }
 
     &__right {
         margin-left: 80px;
+         
         @media (max-width: 1181px) {
             margin-left: 0;
             margin-top: 15px;
@@ -68,6 +53,7 @@
             line-height: 27px;
             color: $dark;
         }
+
         &-title {
             margin-top: 0px;
             margin-bottom: 24px;
@@ -75,7 +61,13 @@
             font-size: 48px;
             line-height: 61px;
             color: $dark;
+            &-br {
+                @media (max-width: 510px) {
+                    display: none;
+                }
+            }
         }
+
         &-text {
             margin-top: 0;
             margin-bottom: 40px;
@@ -99,6 +91,12 @@
 
     &__card {
         margin-bottom: 40px;
+
+        &-br {
+            @media (max-width: 510px) {
+                display: none;
+            }
+        }
         
         &-title {
             margin-top: 24px;
